@@ -23,7 +23,6 @@ body{
     min-height: 100vh;
 }
 
-
 /*=================================================
 css for button
 ==================================================*/
@@ -34,9 +33,7 @@ css for button
     font-size: 1.05rem;
 }
 
-
 /*  */
-
 .meal-wrapper{
     max-width: 1280px;
     margin: 0 auto;
@@ -47,7 +44,6 @@ css for button
 .meal-search{
     margin: 2rem 0;
 }
-
 .meal-search-box{
     margin: 1.2rem;
     display: flex;
@@ -182,7 +178,6 @@ meal-name h3{
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
 }
-
 .recipe-instruct{
     padding: 1rem 0;
 }
@@ -215,13 +210,6 @@ meal-name h3{
     width: 100%;
 
 }
-
-
-
-
-
-
-
 
 /* media queries*/
 @media screen and (min-width: 600px){
