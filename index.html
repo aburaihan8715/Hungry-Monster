@@ -1,39 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <title>Hungry Monster</title>
-  </head>
-  <body>
-      <div class="search_area">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                    <div class="input-group">
-                        <input id="search" type="search" class="form-control rounded" placeholder="Search for Meal"/>
-                        <button id="submit" type="button" class="btn btn-outline-primary">search</button>
-                    </div>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                    <ul id="meals_iteam">
-
-                    </ul>
-                </div>
-               </div>
-                  
+    <div class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title">Find Meals You Like</h2>
+                <div class="meal-search-box">
+                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn"><i class="fas fa-search"></i>
+                    </button>
+                </div>                
             </div>
+
+            <!-- start meal result -->
+            <div class="meal-result">
+                <h2 class="title">Your Search Results</h2>
+                <div id="meal">
+                
+                </div>
+            </div>
+            <!-- end meal result div --> 
+
+
+            <!-- start meal details -->
+            <div class="meal-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                 <div class="meal-details-content">
+                    
+                </div>
+            </div>
+            <!-- end meal details div-->
         </div>
-    
+           <!-- end meal wrapper div-->    
+    </div>
+    <!-- end container div-->
 
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
